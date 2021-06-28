@@ -4,7 +4,6 @@ from discord.ext import commands
 import colorama
 from colorama import Fore
 import asyncio
-from webserver import keep_alive
 
 prefix = os.getenv("PREFIX")
 token = os.getenv("TOKEN")
