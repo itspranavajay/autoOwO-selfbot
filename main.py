@@ -15,12 +15,12 @@ bot = commands.Bot(command_prefix=prefix,
 
 @bot.command()
 async def help(ctx):
-  embed = discord.Embed(title="Help AutoOwO", color=420699, description=f"**{prefix}autoOwO**\nowoh, owo sell all, owo flip 500 and owo cash 50 seconds.\n\n**{prefix}stopautoOwO**\nstops autoOwO.")
+  embed = discord.Embed(title="Help AutoOwO", color=420699, description=f"**{prefix}start**\nowoh, owo sell all, owo flip 500 and owo cash 50 seconds.\n\n**{prefix}stop**\nstops autoOwO.")
   embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/858922949452103710/858928737746812988/44240a043c5e0ee4d3d7cb70ce42b77e.gif")
   await ctx.send(embed=embed)
 
 @bot.command(pass_context=True)
-async def autoOwO(ctx):
+async def start(ctx):
 	await ctx.message.delete()
 	await ctx.send('auto OwO is now **enabled**!')
 	global dmcs
