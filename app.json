@@ -1,0 +1,25 @@
+{
+    "name": "autoOwO",
+    "description": "Hello, autoOwO Selfbot on heroku",
+    "repository": "https://github.com/Red-Aura/autoOwO-selfbot",
+    "env": {
+      "PREFIX": {
+        "description": "prefix",
+        "value": "!"
+      },
+      "TOKEN": {
+        "description": "TOKEN HERE",
+        "value": ""
+      }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }],
+    "buildpacks": [{
+      "url": "heroku/python"
+    }]
+  }
+  
